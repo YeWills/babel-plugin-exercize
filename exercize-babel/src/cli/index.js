@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 const commander = require('commander');
 const { cosmiconfigSync } = require('cosmiconfig');
+const searchResultconfig = require('../../test/myBabel.config.js');
 const glob = require('glob');
 const myBabel = require('../core');
 const fsPromises = require('fs').promises;
@@ -45,7 +46,8 @@ const explorerSync = cosmiconfigSync('myBabel');
 const searchResult = explorerSync.search();
 
 const options = {
-    babelOptions: searchResult.config,
+    // babelOptions: searchResult.config,
+    babelOptions: searchResultconfig,
     cliOptions:  {
         ...cliOpts,
         filenames

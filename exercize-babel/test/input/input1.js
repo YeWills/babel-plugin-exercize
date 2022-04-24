@@ -1,5 +1,5 @@
-const c = 1;
-const d = 2;
+const c = 113;
+const d = 23;
 const e = 4;
 
 function add(a, b) {
