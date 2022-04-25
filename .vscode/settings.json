@@ -1,0 +1,16 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "stylelint.validate": [
+    "css",
+    "less",
+    "scss"
+  ],
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "yarn.lock": true
+  },
+  "search.useIgnoreFiles":true
+}
